@@ -1,0 +1,66 @@
+<!--
+File: index.html
+Created: Monday, 4th January 2021 8:49:17 pm
+Author: Aquib Mujtaba (aquib.pust13@gmail.com)
+-----
+Last Modified: Wednesday, 6th January 2021 12:02:32 am
+Modified By: Aquib Mujtaba (aquib.pust13@gmail.com)
+-----
+Copyright (c) 2021 @quib_self
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>e-Commerce Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>e-Commerce Page</h2>
+        <div class="row" id="first_row">
+            <div id="div_1" class="col-md-5">
+                <h4>Add Product</h4>
+                <form id="product_form" class="m-4" action="#">
+                    <input id="product_input" type="text" class="form-control mb-4" placeholder="Name ...">
+                    <input id="price_input" type="text" class="form-control mb-4" placeholder="Price ...">
+                    <button class="btn btn-outline-primary float-left mb-4" type="submit"> Add Product </button>
+                </form>
+            </div>
+            <div data-spy="scroll" id="div_2" class="col-md-7" >
+                <h4>Product List</h4>
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="product_list">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="div_3" class="row">
+            <div class="col">
+                <h4>CHART LIST</h4>
+                <ol id="chart_list">
+
+                </ol>
+                <button id="clr" class="btn btn-outline-danger float-right mb-4" type="submit">Clear All</button>
+            </div>
+        </div>
+        <p class="float-right">Developed by @quib 2021</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

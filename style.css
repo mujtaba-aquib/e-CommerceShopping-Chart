@@ -1,0 +1,60 @@
+/*
+ * File: style.css
+ * Created: Monday, 4th January 2021 8:49:28 pm
+ * Author: Aquib Mujtaba (aquib.pust13@gmail.com)
+ * -----
+ * Last Modified: Tuesday, 5th January 2021 11:53:02 pm
+ * Modified By: Aquib Mujtaba (aquib.pust13@gmail.com)
+ * -----
+ * Copyright (c) 2021 @quib_self
+ */
+
+.container {
+    background-color: aquamarine;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family:monospace;
+}
+
+#div_1 {
+    background-color: rgb(58, 231, 173);
+    border: 2px solid rgb(71, 69, 219);
+}
+
+#div_2 {
+    background-color: rgb(58, 231, 173);
+    border: 2px solid rgb(71, 69, 219);
+}
+
+#div_3 {
+    background-color: rgb(21, 230, 160);
+    border: 2px solid rgb(71, 69, 219);
+    margin-top: 5px;
+}
+p{
+    margin-top: 5px;
+}
+th{
+    font-style: italic;
+    font-size:18px;
+}
+
+.success .error{
+
+    color: ivory;
+    padding: 10px;
+}
+
+.success{
+    background: lawngreen;
+}
+
+.error{
+    background: lightcoral;
+}
+
+ol{
+   text-align: left;
+   font-size: 20px;
+}
