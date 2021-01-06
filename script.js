@@ -3,7 +3,7 @@
  * Created: Monday, 4th January 2021 8:49:44 pm
  * Author: Aquib Mujtaba (aquib.pust13@gmail.com)
  * -----
- * Last Modified: Wednesday, 6th January 2021 12:06:25 am
+ * Last Modified: Wednesday, 6th January 2021 5:32:21 pm
  * Modified By: Aquib Mujtaba (aquib.pust13@gmail.com)
  * -----
  * Copyright (c) 2021 @quib_self
@@ -56,7 +56,7 @@ class UI {
         li.appendChild(link);
 
         chartList.appendChild(li);
-        UI.showAlert("Successfully Added to Chart..!", "Success");
+        UI.showAlert("Successfully added to chart..!", "success");
     }
 
     static removeFromChart(target) {
@@ -133,6 +133,7 @@ function addProduct(e) {
         let product = new Product(productName, productPrice);
         UI.addProductToList(product);
         LocalStore.addProductToSotrage(product);
+        UI.showAlert("Successfully added Product..!", "success");
         UI.clearFilds();
     }
 
@@ -153,15 +154,13 @@ function removeChartList(e) {
 
     console.log("drop");
     UI.removeFromChart(e.target);
-    UI.showAlert("A product removed from Chart..!", "error");
-    
+    UI.showAlert("A Product removed from list.", "error");
     e.preventDefault();
-    
 }
 
 function deleteAll() {
-    
-    UI.showAlert("Delete Chart list..!", "error");   
+
+    UI.showAlert("Product chart clear..!", "error");
     dropChart.innerHTML = "";
- 
+
 }
