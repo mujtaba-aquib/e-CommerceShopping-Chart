@@ -56,6 +56,7 @@ class UI {
         li.appendChild(link);
 
         chartList.appendChild(li);
+        UI.showAlert("Successfully Added to Chart..!", "Success");
     }
 
     static removeFromChart(target) {
@@ -153,8 +154,10 @@ function removeChartList(e) {
     console.log("drop");
     UI.removeFromChart(e.target);
     e.preventDefault();
+    
 }
 
 function deleteAll() {
     dropChart.innerHTML = "";
+    
 }
