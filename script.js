@@ -153,11 +153,15 @@ function removeChartList(e) {
 
     console.log("drop");
     UI.removeFromChart(e.target);
-    e.preventDefault();
     UI.showAlert("A product removed from Chart..!", "error");
+    
+    e.preventDefault();
+    
 }
 
 function deleteAll() {
+    
+    UI.showAlert("Delete Chart list..!", "error");   
     dropChart.innerHTML = "";
- UI.showAlert("Delete Chart list..!", "error");   
+ 
 }
